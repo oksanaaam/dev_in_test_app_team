@@ -241,6 +241,9 @@ celerybeat.pid
 .venv
 .idea
 __init__.py
+__pycache__
+__pycache__/
+*.pyc
 env/
 venv/
 ENV/
