@@ -1,11 +1,12 @@
+from appium.webdriver.common.mobileby import MobileBy
+
 from .page import Page
-from selenium.webdriver.common.by import By
 
 
 class LoginPage(Page):
-    USERNAME_INPUT = (By.ID, 'username')
-    PASSWORD_INPUT = (By.ID, 'password')
-    LOGIN_BUTTON = (By.ID, 'login-button')
+    USERNAME_INPUT = (MobileBy.ID, 'username')
+    PASSWORD_INPUT = (MobileBy.ID, 'password')
+    LOGIN_BUTTON = (MobileBy.ID, 'login-button')
 
     def enter_username(self, username):
         username_input = self.find_element(self.USERNAME_INPUT)

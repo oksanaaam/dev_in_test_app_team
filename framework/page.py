@@ -1,9 +1,10 @@
-from selenium.webdriver.support.ui import WebDriverWait
+from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class Page:
-    def __init__(self, driver):
+    def __init__(self, driver: WebDriver):
         self.driver = driver
 
     def find_element(self, locator, timeout=10):
